@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#90786C21"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="welcome"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:hint="  enter email"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/edit_text"
+        android:id="@+id/etemail"
+
+        />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:hint="  enter password"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/etemail"
+        android:background="@drawable/edit_text"
+        android:id="@+id/etpas"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="remember me"
+        android:layout_marginTop="10dp"
+        android:id="@+id/checkbox"
+        android:layout_below="@id/etpas"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#184E83"
+        android:text="login"
+        android:layout_below="@+id/checkbox"
+        android:id="@+id/btnlog"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#184E83"
+        android:text="new user?"
+        android:id="@+id/btnnew"
+        android:layout_alignBaseline="@+id/btnlog"
+        android:layout_marginStart="100dp"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="335dp"
+        android:src="@mipmap/pic1"
+        android:id="@+id/pic1"
+        android:layout_below="@+id/btnnew"
+        />
+
+
+</RelativeLayout>

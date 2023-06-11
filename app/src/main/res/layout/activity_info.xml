@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.final_project.Info">
+
+
+
+
+ <Button
+        android:id="@+id/gamesbtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+     android:layout_marginLeft="20dp"
+     android:backgroundTint="#204971"
+    android:text="games"
+    android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/tablebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="160dp"
+        android:backgroundTint="#204971"
+        android:text="table"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/mapbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#204971"
+        android:text="map"
+        android:textSize="16sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Linear"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical" >
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/container"
+            android:name="com.example.final_project.GamesFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_games" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
